@@ -1,4 +1,5 @@
-
+#ifndef NODE_H
+#define NODE_H
 
 #include "queue.h"
 //uzel, sostoyashiy iz stacka iz studentov
@@ -44,4 +45,4 @@ public:
     }
     //friend void add(node* root, node* a);
 };
-
+#endif

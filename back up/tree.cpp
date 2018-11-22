@@ -33,7 +33,8 @@ void tree<T, container>::test_all(int k)
     int res, kol = 0, lev = 0, flag = 0;
     goto_root();
     t = clock();
-    res = solve1(k, &kol);
+    // Fix this! Commented to check compilation errors
+    //res = solve1(k, &kol);
     t = (clock() - t) / CLOCKS_PER_SEC;
     printf("1:\ntime = %.2f\nres = %d\n", t, res);
 }
@@ -164,7 +165,6 @@ int tree<T, container>::read_tree(int m, const char* name)
     return i;
 }
 
-
 /*
 //1
 int tree::solve1(int k, int* kol)
@@ -186,5 +186,8 @@ int tree::solve1(int k, int* kol)
     }
     return res;
 }
-
 */
+
+
+//explicit instantiation
+template class tree<student, queuee>;

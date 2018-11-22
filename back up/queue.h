@@ -1,3 +1,6 @@
+#ifndef QUEUE_H
+#define QUEUE_H
+
 #include "student.h"
 template <class T>
 class node_queue : public T{
@@ -73,4 +76,4 @@ public:
         return (*head < *(a.get_head()));
     }
 };
-
+#endif

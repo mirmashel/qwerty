@@ -1,4 +1,5 @@
 #include "queue.h"
+
 template <class T>
 void queuee<T>::delete_queue(node_queue<T>* curr){
     if(!curr)
@@ -78,3 +79,6 @@ void queuee<T>::add(node_queue<T>* a){
     tail->set_next(a);
     set_tail(a);
 }
+
+//explicit instantiation
+template class queuee<student>;
