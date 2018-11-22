@@ -1,5 +1,7 @@
-#include "node.h"
+#ifndef TREE_H
+#define TREE_H
 
+#include "node.h"
 
 
 template <class T, template <class> class container>
@@ -39,3 +41,4 @@ public:
         curr = a;
     }
 };
+#endif

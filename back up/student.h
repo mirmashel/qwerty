@@ -1,3 +1,6 @@
+#ifndef STUDENT_H
+#define STUDENT_H
+
 #include <stdio.h>
 #include <iostream>
 #include <string.h>
@@ -34,3 +37,4 @@ public:
     void swap(student& b);
     void move(student& b);
 };
+#endif
